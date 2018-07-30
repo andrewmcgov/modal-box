@@ -1,10 +1,12 @@
 {
-  "name": "affogato",
-  "version": "1.1.0",
-  "description": "basic development environment using gulp",
+  "name": "modal-box",
+  "version": "0.0.0",
+  "description": "basic development modal plugin",
+  "repository": "none",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files './'"
   },
   "keywords": [
     "gulp",
@@ -13,10 +15,6 @@
   "author": "Andrew McGoveran",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0"
+    "browser-sync": "^2.24.6"
   }
 }
