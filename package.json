@@ -6,15 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files './'"
+    "start": "parcel index.html"
   },
-  "keywords": [
-    "gulp",
-    "sass"
-  ],
   "author": "Andrew McGoveran",
-  "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^2.24.6"
-  }
+  "license": "MIT"
 }
