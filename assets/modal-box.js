@@ -4,7 +4,7 @@
     const defaults = {
       overlay: true,
       closeButton: true,
-      maxWidth: 400,
+      maxWidth: 700,
       maxHeight: 300,
       header: true,
       headerText: "",

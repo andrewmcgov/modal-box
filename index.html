@@ -4,22 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="main.css">
-  <script src="./modal-box.js" defer></script>
-  <script src="./index.js" defer></script>
+  <title>Modal-Box JS</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <script src="./assets/modal-box.js" defer></script>
+  <script src="./assets/index.js" defer></script>
 </head>
 
 <body>
   <header class="header">
     <h1>Modal box</h1>
-    <p>A simple javascript plugin for modal boxes.</p>
+    <p>A simple vanilla js plugin for modal boxes.</p>
   </header>
+  <div class="hr"></div>
   <main>
-    <button id="openModal">
-      Open Modal
-    </button>
+    <form action="/make-modal" class="modal-form">
+      <div class="modal-form__group">
+        <input type="radio" name="overlay" id="overlayTrue" checked>
+        <label for="overlayTrue" class="radio-label">Overlay</label>
+        <input type="radio" name="overlay" id="overlayFalse">
+        <label for="overlayFalse" class="radio-label">No Overlay</label>
+      </div>
+
+      <p>Click below to open a your modal.</p>
+      <span id="openModal" class="open-modal-btn">
+        Open Modal
+      </span>
+    </form>
   </main>
+  <div class="hr-bottom"></div>
 </body>
 
 </html>

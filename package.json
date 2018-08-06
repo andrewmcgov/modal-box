@@ -9,5 +9,9 @@
     "start": "parcel index.html"
   },
   "author": "Andrew McGoveran",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
 }
