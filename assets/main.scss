@@ -1,0 +1,51 @@
+@import "variables.scss";
+@import "modal.scss";
+@import "modal-form.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  padding: 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: $turquoise;
+  color: $white;
+  border-top: 5px solid $rose;
+  border-bottom: 5px solid $red-peach;
+}
+
+.hr {
+  width: 100%;
+  height: 5px;
+  background-color: $dark-blue;
+}
+
+.hr-bottom {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 5px;
+  border-top: 5px solid $turquoise;
+  border-bottom: 5px solid $peach;
+}
+
+main {
+  border-top: 5px solid $turquoise;
+  color: $dark-blue;
+}
+
+.open-modal-btn {
+  margin: 10px 0;
+  padding: 15px;
+  color: $white;
+  background-color: $turquoise;
+  box-shadow: 3px 3px 0 $red-peach;
+}
