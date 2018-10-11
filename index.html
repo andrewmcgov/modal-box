@@ -17,18 +17,24 @@
   </header>
   <div class="hr"></div>
   <main>
-    <form action="/make-modal" class="modal-form">
+    <form action="/make-modal" class="modal-form" id="modalForm">
       <div class="modal-form__group">
-        <input type="radio" name="overlay" id="overlayTrue" checked>
+        <input type="radio" name="overlay" id="overlayTrue" value="true" checked>
         <label for="overlayTrue" class="radio-label">Overlay</label>
         <input type="radio" name="overlay" id="overlayFalse">
-        <label for="overlayFalse" class="radio-label">No Overlay</label>
+        <label for="overlayFalse" class="radio-label" value="false">No Overlay</label>
+      </div>
+      <div class="modal-form__group">
+        <input type="radio" name="animation" id="animationDrop" value="drop" checked>
+        <label for="animationDrop" class="radio-label">Drop</label>
+        <input type="radio" name="animation" id="animationFade" value="fade">
+        <label for="animationFade" class="radio-label">Fade</label>
+        <input type="radio" name="animation" id="animationNone" value="none">
+        <label for="animationNone" class="radio-label">None</label>
       </div>
 
       <p>Click below to open a your modal.</p>
-      <span id="openModal" class="open-modal-btn">
-        Open Modal
-      </span>
+      <input type="submit" id="openModal" class="open-modal-btn" value="Open Modal">
     </form>
   </main>
   <div class="hr-bottom"></div>
