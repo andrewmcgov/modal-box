@@ -8,6 +8,15 @@
   background-color: $white;
   box-shadow: 4px 4px 4px $shadow-blue;
   border: 2px solid $dark-blue;
+  transition: all 0.2s ease-in-out;
+
+  &.modalBox-animation--drop {
+    top: -100%;
+  }
+
+  &.modalBox-animation--fade {
+    opacity: 0;
+  }
 
   .modalBox__header {
     width: 100%;

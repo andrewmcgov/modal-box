@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "cssnano": "^4.0.5",
     "node-sass": "^4.9.2"
   }
 }

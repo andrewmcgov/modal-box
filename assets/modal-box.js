@@ -6,6 +6,8 @@
       closeButton: true,
       maxWidth: 700,
       maxHeight: 300,
+      animation: 'drop',
+      animationLength: 0.2,
       header: true,
       headerText: "",
       content: ""
@@ -30,10 +32,17 @@
     // Create a document fragment to append the box to
     const docFrag = document.createDocumentFragment();
 
+    // Make animation classes
+    let animationStartClass = 'modalBox-animation--none';
+    const hasAnimation = this.options.animation === 'drop' || this.options.animation === 'fade'
+    if (hasAnimation) {
+      animationStartClass = `modalBox-animation--${this.options.animation}`;
+    }
+
     // Set up the main modal box container
     // Apply styles from the settings
     this.modalBox = document.createElement("div");
-    this.modalBox.classList.add("modalBox");
+    this.modalBox.classList.add("modalBox", `${animationStartClass}`);
     this.modalBox.style.maxWidth = this.options.maxWidth + "px";
     //this.modalBox.style.maxHeight = this.options.maxHeight + "px";
 
@@ -74,6 +83,14 @@
     this.modalBox.appendChild(content);
     docFrag.appendChild(this.modalBox);
     document.body.appendChild(docFrag);
+
+    function removeAnimationClass(self) {
+      this.modalBox.classList.remove(animationStartClass)
+    }
+
+    if (hasAnimation) {
+      setTimeout(() => this.modalBox.classList.remove(animationStartClass), 50);
+    }
   }
 
   function attachCloseEvents() {
